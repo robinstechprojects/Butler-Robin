@@ -4,7 +4,7 @@ Butler Robin is the Continuation of the RobinsDiscordAssistant (RDA) Project.
 It´s a simple and lightweight Bot for Discord
 
 
-# Current Feautres
+## Current Feautres
 
   - !dice -> generates a Number from 1 to 6
   - !coinflip -> Makes a Coinflip
