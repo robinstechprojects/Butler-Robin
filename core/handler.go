@@ -12,6 +12,8 @@ import (
 //MakeConnection connects the Bot to Discord
 func MakeConnection(token string){
 
+    
+
 	d, err := discordgo.New(token)
 
     if err != nil {
@@ -49,7 +51,18 @@ func handleCmd(d *discordgo.Session, msg *discordgo.MessageCreate) {
     content := msg.Content
 
     if (content == "!test") {
-        d.ChannelMessageSend(msg.ChannelID, "Test bestanden !")
+        switch{
+        case Lang == "DE":
+            d.ChannelMessageSend(msg.ChannelID, "Test bestanden !")
+    
+        case Lang == "EN":
+            d.ChannelMessageSend(msg.ChannelID, "Test successfull !")
+        
+        default:
+            fmt.Println("Your Language Setting is invalig")
+            d.ChannelMessageSend(msg.ChannelID, "Internal System Error, Look into Console for detailed Information")
+        
+        }
 	}
 	
 	if (content == "!dice"){
@@ -58,11 +71,21 @@ func handleCmd(d *discordgo.Session, msg *discordgo.MessageCreate) {
 
 	if (content == "!coinflip"){ 
 		if util.CoinFlipInt() == 1 {
-			d.ChannelMessageSend(msg.ChannelID, "Kopf!")
+            switch{
+            case Lang == "DE":
+                d.ChannelMessageSend(msg.ChannelID, "Kopf!")
+            case Lang == "EN":
+                d.ChannelMessageSend(msg.ChannelID, "Heads!")
+            }
 		}else{
-			d.ChannelMessageSend(msg.ChannelID, "Zahl!")
-		}
-		
+            switch{
+            case Lang == "DE":
+                d.ChannelMessageSend(msg.ChannelID, "Zahl!")
+            case Lang == "EN":
+                d.ChannelMessageSend(msg.ChannelID, "Tails!")
+            }
+        }
+    
 
 	}
     //fmt.Printf("Message: %+v\n", msg.Message)
