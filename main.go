@@ -1,7 +1,7 @@
 package main
 
 import (
-	"me.sunrobindev/discordbot/core" //Import Core to access handler Class
+	"github.com/robinstechprojects/Butler-Robin/core" //Import Core to access handler Class
 	"fmt" //fmt for printing & scanning
 )
 

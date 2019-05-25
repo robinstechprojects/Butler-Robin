@@ -3,7 +3,7 @@ package core
 import (
 	"fmt"
 	"github.com/bwmarrin/discordgo"
-	"me.sunrobindev/discordbot/util"
+	"github.com/robinstechprojects/Butler-Robin/util"
 	"strconv"
 	
 )
