@@ -19,7 +19,7 @@ Butler Robin is coded in Golang and uses the discordgo API to work.
 Since Go is a compiled language, installation will be pretty easy.
 You can just download the executable for your System from realese Tab, run it, enter your Token, from Discord Developer Site and there you go.
 
-
+Right now there only is a Build for Windows. If you need something else feel free to compile it yourself using go build main.go.
 ### Development
 Butler Robin is an open-source Project and welcomes everyone who wants to contribute.
 Feel free to do so or express us your Ideas through issues.
