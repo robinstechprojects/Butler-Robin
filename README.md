@@ -8,6 +8,10 @@ It´s a simple and lightweight Bot for Discord
 
   - !dice -> generates a Number from 1 to 6
   - !coinflip -> Makes a Coinflip
+  - !rapsong -> suggests you a rap song
+  - !rocksong -> suggests you a rock song
+  - !metalsong -> suggests you a metal song
+  - !wisdom -> The Bot will tell you some Words of Wisdom
   - Bot can Answer in German or English. 
 
 
