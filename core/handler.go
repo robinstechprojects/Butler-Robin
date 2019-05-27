@@ -85,8 +85,20 @@ func handleCmd(d *discordgo.Session, msg *discordgo.MessageCreate) {
                 d.ChannelMessageSend(msg.ChannelID, "Tails!")
             }
         }
-    
 
-	}
+        }
+    
+        if (content == "!rapsong"){
+            d.ChannelMessageSend(msg.ChannelID, util.RequestString("rapsong"))
+    }
+        if (content == "!rocksong"){
+            d.ChannelMessageSend(msg.ChannelID, util.RequestString("rocksong"))
+        }
+        if (content == "!metalsong"){
+            d.ChannelMessageSend(msg.ChannelID, util.RequestString("metalsong"))
+        }
+        if (content == "!wisdom"){
+            d.ChannelMessageSend(msg.ChannelID, util.RequestString("wisdom"))
+        }
     //fmt.Printf("Message: %+v\n", msg.Message)
 }
